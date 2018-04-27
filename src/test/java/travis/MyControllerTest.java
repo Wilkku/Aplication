@@ -14,4 +14,9 @@ public class MyControllerTest {
 	public void testTestWithString(){
 		assertEquals("{\"id\":456}", new MyController().test("456"));
 	}
+	
+	@Test
+	public void testTestWith(){
+		assertEquals("{\"id\":MORO}", new MyController().test("MORO"));
+	}
 }
