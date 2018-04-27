@@ -10,6 +10,6 @@ public class MyController {
     @RequestMapping(value ="/test", method = RequestMethod.GET)
     
     public String test(@RequestParam(value="name", defaultValue="World") String name) {
-        return "{\"id\":123}";
+        return "{\"id\":" +name+"}";
     }
 }

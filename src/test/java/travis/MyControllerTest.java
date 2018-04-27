@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MyControllerTest {
 	@Test
 	public void testTest(){
-		assertEquals("{\"id\":123}", new MyController().test("test"));
+		assertEquals("{\"id\":test}", new MyController().test("test"));
 	}
 	
 	@Test
